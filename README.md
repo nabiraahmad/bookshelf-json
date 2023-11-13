@@ -1,1 +1,1 @@
-# bookshelf_json
+# bookshelf-json
