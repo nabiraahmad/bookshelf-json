@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <title>my bookshelf</title>
+</head>
+<body>
+  <header>
+    <h1>My Bookshelf</h1>
+    <h2 id = subhead>come find a book to read!<h2>
+    <div id="particles-js"></div>
+  </header>
+  <nav>
+     <nav>
+    <ul id="navbar">
+      <li><a href="#" onclick="loadBooks('all')">ALL BOOKS</a></li>
+      <li><a href="#" onclick="loadBooks('mystery')">MYSTERY</a></li>
+      <li><a href="#" onclick="loadBooks('psychological thriller')">PSYCOLOGICAL THRILLER</a></li>
+      <li><a href="#" onclick="loadBooks('romance')">ROMANCE</a></li>
+   
+    </ul>
+  </nav>
+  </nav>
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <span class="close-popup" onclick="closeWelcomePopup()">&times;</span>
+      <p class = popup_text>Hey friends, welcome to my mini library!</p>
+      <p class = popup_text>Imagine a cat sleeping on you while you have hot coffee in your hand and access to all these books :)</p>
+      <img src="reading_cat.gif" alt="Welcome GIF">
+    </div>
+  </div>
+  <main id="contentGrid"></main>
+  <script src="script.js"></script>
+</body>
+</html>
